@@ -1,0 +1,16 @@
+# Seeds for the Products resource (queries).
+#
+# Each entry creates one product. `name` is the identity: re-running the seeds
+# never creates a duplicate, it keeps the existing record.
+- name: Keyboard
+  description: Mechanical keyboard
+  category: peripherals
+  price: "159.90"
+- name: Mouse
+  description: Wireless mouse
+  category: peripherals
+  price: "89.90"
+- name: Laptop Stand
+  description: Aluminum stand
+  category: accessories
+  price: "129.00"

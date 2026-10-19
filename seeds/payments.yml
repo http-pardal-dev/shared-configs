@@ -1,0 +1,12 @@
+# Seeds for the Payments resource (lifecycle).
+#
+# `amount` creates a `pending` payment and is the identity: re-running the
+# seeds matches the same record by amount and never creates a duplicate.
+# `status` is server-owned (never accepted from the API) and is only applied
+# on creation, to leave examples in every state.
+- amount: "99.90"
+  status: pending
+- amount: "123.45"
+  status: paid
+- amount: "50.00"
+  status: cancelled

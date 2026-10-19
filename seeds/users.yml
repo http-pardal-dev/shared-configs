@@ -1,0 +1,29 @@
+# Seeds for the Users resource (CRUD and fundamentals).
+#
+# Each entry creates one user. `email` is the identity: re-running the seeds
+# never creates a duplicate, it keeps the existing record.
+#
+# `password` is the shared seed password, hashed with bcrypt on load exactly
+# like the original's has_secure_password (only the digest is stored).
+# `password_confirmation` mirrors the Ruby fixture and is ignored on load.
+- name: Ada Lovelace
+  email: ada@example.com
+  password: secret123
+  password_confirmation: secret123
+  role: admin
+  birthdate: "1815-12-10"
+  active: true
+- name: Alan Turing
+  email: alan@example.com
+  password: secret123
+  password_confirmation: secret123
+  role: user
+  birthdate: "1912-06-23"
+  active: true
+- name: Grace Hopper
+  email: grace@example.com
+  password: secret123
+  password_confirmation: secret123
+  role: user
+  birthdate: "1906-12-09"
+  active: false
